@@ -1,0 +1,66 @@
+﻿@model List<AkuteSinglePage.Models.LocalizedVideoCategory>
+
+@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared.cshtml";
+}
+
+<script type="text/javascript" src="~/JS/Libs/jquery.jCarouselLite.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $(".video-slider").jCarouselLite({
+            circular: false
+        });
+    });
+</script>
+
+<!--kimi to display transparent iframes in IE-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('iframe').each(function () {
+            var url = $(this).attr("src");
+            $(this).attr("src", url + "?wmode=transparent");
+        });
+    });
+</script>
+
+<header></header>
+
+<article id="videogallerypage" class="profile-article">
+    <section id="our-videos" class="full-width">
+        <div class="page-header-wrapper">
+        </div>
+        <div class="container">
+
+            @foreach (var item in Model)
+            {
+             <div class="inner">
+                <div class="mask">
+                    <div class="block-head">
+                        <h3>@item.Name</h3>
+                    </div>
+                    <div class="block-slider">
+                        <div class="video-slider">
+                            <ul>
+                                @foreach (var v in item.Videos)
+                                {
+                                    <li>
+                                        <div class="thumbnail-container">
+                                            <div class="item">
+                                                    <iframe class="video-container" src="@v.Link" frameborder="0" allowfullscreen="" allowTransparency="true" wmode="Opaque">
+                                                    </iframe>
+                                                <p>@v.Title</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </section>
+</article>

@@ -1,0 +1,63 @@
+﻿@model List<AkuteSinglePage.Models.LocalizedConcert>
+
+@{
+    ViewBag.Title = "Concerts";
+    Layout = "~/Views/Shared.cshtml";
+}
+
+<header></header>
+
+<article id="afishaconcertspage" class="profile-article">
+        <section id="our-concerts" class="full-width">
+            <div class="page-header-wrapper">
+                 <h2>
+                    <i>Ближэйшыя</i>
+                    <span>Akute</span>
+                    <i>выступы</i>
+                </h2>
+            </div>
+            <div class="container">
+                @for (int i = 0; i< Model.Count; i++)
+                {
+                        <hr class="divider divider-process">
+                        <div class="row-fluid">
+                        @if (i%2 == 0)
+                        {
+                                <div class="span4 offset2 posRel process-images">
+                                    <div>
+                                        <img id="ship" src="@Url.Action("GetConcertLogo", new { filename = Model[i].LogoFilename })" width="200px" />
+                                    </div>
+                                </div>
+                                <div class="span6">
+                                    <h3>@Model[i].Name</h3>
+                                    <p>@Model[i].Date.ToShortDateString() 
+                                        @if (Model[i].Time.HasValue) { @Model[i].Time.Value.ToString(@"hh\:mm")}
+                                    </p>
+                                    <p>@Model[i].City @Model[i].Place</p>
+                                    <p>@Model[i].Address</p>
+                                    <p>@Model[i].Contacts</p>
+                                </div>
+                        }
+                        else
+                        {
+                                <div class="span4 offset2">
+                                    <h3>@Model[i].Name</h3>
+                                    <p>@Model[i].Date.ToShortDateString() 
+                                        @if (Model[i].Time.HasValue) { @Model[i].Time.Value.ToString(@"hh\:mm")}
+                                    </p>
+                                    <p>@Model[i].City @Model[i].Place</p>
+                                    <p>@Model[i].Address</p>
+                                    <p>@Model[i].Contacts</p>
+                                </div>
+                                 <div class="span4 posRel process-images">
+                                    <div>
+                                        <img id="ship" src="@Url.Action("GetConcertLogo", new { filename = Model[i].LogoFilename })" width="200px" />
+                                    </div>
+                                </div>
+                        }
+                       </div>
+                }
+                <hr class="divider divider-process" />
+            </div>
+        </section>
+</article>

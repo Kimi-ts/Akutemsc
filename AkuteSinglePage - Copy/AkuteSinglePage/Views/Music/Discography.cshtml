@@ -1,0 +1,60 @@
+﻿@model List<AkuteSinglePage.Models.LocalizedAlbum>
+
+@{
+    ViewBag.Title = "Discography";
+    Layout = "~/Views/Shared.cshtml";
+}
+
+<header>
+
+</header>
+
+<article id="misicdetailspage" class="profile-article">
+    <section class="full-width" id="process">
+        <div class="container">
+            <div class="page-header-wrapper">
+                            <div class="flipster">
+                                <ul class="flip-items">
+                                    @foreach (var logo in Model)
+                                    {
+                                        <li data-url="@Url.Action("SongsPanel", "Music", new {albumId = logo.Id})"><img  src="@Url.Action("MyPicture", new {filename=logo.LogoFilename})" height="260px" width="260px" /></li>
+                                    }
+                                </ul>
+                            </div>
+            </div>
+            <hr class="divider divider-process" />
+            <div id="songs-panel">
+
+            </div>
+            </div>
+    </section>
+
+</article>
+
+
+<link rel="stylesheet" type="text/css" href="~/Content/Libs/flipster.css" />
+<script type="text/javascript" src="~/JS/Libs/jquery.flipster.js"></script>
+
+
+        <script type="text/javascript">
+            $(function () {
+                $('.flipster').flipster({
+                    onItemSwitch: function () {
+                        var item = $('.flip-current');
+                        var url = item.attr("data-url");
+                        var $songsPanel = $("#songs-panel");
+
+                        jQuery.ajax({
+                            url: url,
+                            success: function (result) {
+                                $songsPanel.html(result);
+                            },
+                            async: false
+                        });
+                    },
+                    enableMousewheel: false
+                });
+            });
+        </script>
+
+<link rel="stylesheet" type="text/css" href="~/Content/Libs/audio.css" />

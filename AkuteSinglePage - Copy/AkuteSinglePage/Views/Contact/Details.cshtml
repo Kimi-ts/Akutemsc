@@ -1,0 +1,56 @@
+﻿@model AkuteSinglePage.Models.ContactModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared.cshtml";
+}
+
+<article id="contact-page">
+    <header>
+			<div class="row-fluid">
+				<div class="span8 offset2 contact-intro">
+					<h1>
+						У вас ёсць пытанні да нас?
+					</h1>
+					<h2 class="lede two">
+						Запоўніце простую форму, і мы абавязкова вам адкажам.
+					</h2>
+				</div>
+			</div>
+	</header>
+<section id="contact-form">
+		<div class="full-width">
+			<div class="container">
+				<div class="row-fluid">
+					<div class="span5 offset2">
+
+                        @using (Html.BeginForm("Details", "Contact", FormMethod.Post, new {@class="contact-form"}))
+                        {
+                            <h3>ДАШЛІЦЕ НАМ EMAIL</h3>
+                            @Html.ValidationSummary(true)
+                            @Html.LabelFor(c => c.Name, "Ваша імя", new { @class = "sans" })
+                            @Html.ValidationMessageFor(c => c.Name)
+                            @Html.EditorFor(c => c.Name)
+                            @Html.LabelFor(c => c.Email, "Ваш email", new { @class="sans"})
+                            @Html.ValidationMessageFor(c => c.Email)
+                            @Html.EditorFor(c=>c.Email)
+                            @Html.LabelFor( c=> c.Message, "Паведамленне", new { @class="sans"})
+                            @Html.ValidationMessageFor(c => c.Message)
+                            @Html.TextAreaFor( c=>c.Message,  new {@rows="6", @cols="25"})
+
+                            <input type="submit" value="Даслаць" class="buttons submit sans" />
+                            if (ViewBag.IsError)
+                            {
+                                <h4>Нажаль, але ваша паведамленне не можа быть даслана зараз. Паспрабуйце паўтарыць папытку праз некаторы час.</h4>
+                            }
+                        }
+					</div>
+					<div class="span3 offset1">
+						<h3>МЫ заўсёды з вамі на сувязі</h3>
+						<p>Гурт Akute заўсёды рады быць побач са сваімі слухачамі. Каб звязацца з намі, вы можаце даслаць нам паведамленне праз email, альбо праз любую з сацыяльных сетак, якімі мы актыўна карыстаемся.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</article>

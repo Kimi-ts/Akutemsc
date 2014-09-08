@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AkuteDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AkuteDBModelStoreContainer">
+    <EntitySet Name="Albums" EntityType="AkuteDBModel.Store.Albums" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Blogs" EntityType="AkuteDBModel.Store.Blogs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Concerts" EntityType="AkuteDBModel.Store.Concerts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="News" EntityType="AkuteDBModel.Store.News" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PhotoAlbums" EntityType="AkuteDBModel.Store.PhotoAlbums" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pictures" EntityType="AkuteDBModel.Store.Pictures" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Songs" EntityType="AkuteDBModel.Store.Songs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="AkuteDBModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VideoCatogory" EntityType="AkuteDBModel.Store.VideoCatogory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Videos" EntityType="AkuteDBModel.Store.Videos" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Blogs_0" Association="AkuteDBModel.Store.FK_Blogs_0">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Blogs" EntitySet="Blogs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pictures_0" Association="AkuteDBModel.Store.FK_Pictures_0">
+      <End Role="PhotoAlbums" EntitySet="PhotoAlbums" />
+      <End Role="Pictures" EntitySet="Pictures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Songs_0" Association="AkuteDBModel.Store.FK_Songs_0">
+      <End Role="Albums" EntitySet="Albums" />
+      <End Role="Songs" EntitySet="Songs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Videos_0" Association="AkuteDBModel.Store.FK_Videos_0">
+      <End Role="VideoCatogory" EntitySet="VideoCatogory" />
+      <End Role="Videos" EntitySet="Videos" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Albums">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="NameBe" Type="ntext" Nullable="false" />
+    <Property Name="NameRu" Type="ntext" Nullable="false" />
+    <Property Name="NameEn" Type="ntext" Nullable="false" />
+    <Property Name="Label" Type="ntext" />
+    <Property Name="DescriptionBe" Type="ntext" />
+    <Property Name="DescriptionEn" Type="ntext" />
+    <Property Name="DescriptionRu" Type="ntext" />
+    <Property Name="LogoFilename" Type="ntext" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Blogs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AuthorId" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="300" />
+    <Property Name="Text" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Tags" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Concerts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="Time" Type="time" />
+    <Property Name="CityRu" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CityBe" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="CityEn" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NameRu" Type="nvarchar" MaxLength="50" />
+    <Property Name="NameBe" Type="nvarchar" MaxLength="50" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="AddressRu" Type="ntext" Nullable="false" />
+    <Property Name="AddressEn" Type="ntext" Nullable="false" />
+    <Property Name="AddressBe" Type="ntext" Nullable="false" />
+    <Property Name="LogoFilename" Type="ntext" Nullable="false" />
+    <Property Name="PlaceRu" Type="ntext" Nullable="false" />
+    <Property Name="PlaceBe" Type="ntext" Nullable="false" />
+    <Property Name="PlaceEn" Type="ntext" Nullable="false" />
+    <Property Name="ContactsRu" Type="ntext" />
+    <Property Name="ContactsBe" Type="ntext" />
+    <Property Name="ConactsEn" Type="ntext" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="TitleRu" Type="nvarchar" Nullable="false" MaxLength="110" />
+    <Property Name="TitleBe" Type="nvarchar" Nullable="false" MaxLength="110" />
+    <Property Name="TitleEn" Type="nvarchar" Nullable="false" MaxLength="110" />
+    <Property Name="TextRu" Type="ntext" Nullable="false" />
+    <Property Name="TextBe" Type="ntext" Nullable="false" />
+    <Property Name="TextEn" Type="ntext" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PhotoAlbums">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="date" Nullable="false" />
+    <Property Name="TitleRu" Type="ntext" Nullable="false" />
+    <Property Name="TitleEn" Type="ntext" Nullable="false" />
+    <Property Name="TitleBe" Type="ntext" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pictures">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PhotoAlbumId" Type="int" Nullable="false" />
+    <Property Name="Filename" Type="ntext" Nullable="false" />
+    <Property Name="DescriptionRu" Type="ntext" />
+    <Property Name="DescriptionBe" Type="ntext" />
+    <Property Name="DescriptionEn" Type="ntext" />
+  </EntityType>
+  <EntityType Name="Songs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlbumId" Type="int" Nullable="false" />
+    <Property Name="Number" Type="int" Nullable="false" />
+    <Property Name="TitleRu" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="TitleBe" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="TitleEn" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="Filename" Type="ntext" Nullable="false" />
+    <Property Name="Lyrics" Type="ntext" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NameRu" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="SurnameRu" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="NameEn" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="SurnameEn" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="NameBe" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="SurnameBe" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Twitter" Type="nvarchar" MaxLength="50" />
+    <Property Name="Facebook" Type="nvarchar" MaxLength="50" />
+    <Property Name="Vkontakte" Type="nvarchar" MaxLength="50" />
+    <Property Name="Instagram" Type="nvarchar" MaxLength="50" />
+    <Property Name="LogoFilename" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VideoCatogory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NameBe" Type="ntext" Nullable="false" />
+    <Property Name="NameRu" Type="ntext" Nullable="false" />
+    <Property Name="NameEn" Type="ntext" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Videos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="TitleRu" Type="ntext" Nullable="false" />
+    <Property Name="TitleBe" Type="ntext" Nullable="false" />
+    <Property Name="TitleEn" Type="ntext" Nullable="false" />
+    <Property Name="Link" Type="ntext" Nullable="false" />
+    <Property Name="Category" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Blogs_0">
+    <End Role="Users" Type="AkuteDBModel.Store.Users" Multiplicity="1" />
+    <End Role="Blogs" Type="AkuteDBModel.Store.Blogs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Blogs">
+        <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pictures_0">
+    <End Role="PhotoAlbums" Type="AkuteDBModel.Store.PhotoAlbums" Multiplicity="1" />
+    <End Role="Pictures" Type="AkuteDBModel.Store.Pictures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PhotoAlbums">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pictures">
+        <PropertyRef Name="PhotoAlbumId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Songs_0">
+    <End Role="Albums" Type="AkuteDBModel.Store.Albums" Multiplicity="1" />
+    <End Role="Songs" Type="AkuteDBModel.Store.Songs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Albums">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Songs">
+        <PropertyRef Name="AlbumId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Videos_0">
+    <End Role="VideoCatogory" Type="AkuteDBModel.Store.VideoCatogory" Multiplicity="1" />
+    <End Role="Videos" Type="AkuteDBModel.Store.Videos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VideoCatogory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Videos">
+        <PropertyRef Name="Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

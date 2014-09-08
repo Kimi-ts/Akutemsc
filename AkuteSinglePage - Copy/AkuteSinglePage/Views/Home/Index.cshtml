@@ -1,0 +1,164 @@
+﻿@model AkuteSinglePage.Models.HomePageModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared.cshtml";
+}
+
+    <header class="home-header">
+        <div id="showreel-wrapper">
+        </div>
+        <div class="header-wrap">
+            <div class="header-inner">
+                <h1><b>Akute</b> <span>Музычнае трыо з Магілёва</span></h1>
+            </div>
+        </div>
+    </header>
+    <article id="homepage">
+        <hr class="divider">
+        <section id="who-we-are" class="container">
+                    <h2>Склад гурта</h2>
+                    <div class="row-fluid">
+                        <div class="span4 centered full-width">
+                            <img class="profile-photo" src="~/Content/img/mytnik.jpg" alt="Стас Мытник">
+                            <div class="profiles-wrap">
+                                <h3>Станіслаў Мытнік</h3>
+                                <h4 class="five">Вакал, гітара, музыка, аранжыроўка</h4>
+                                <ul class="no-bullets centered inline">
+                                    <li><a href="https://twitter.com/Staneska" target="_blank">Twitter</a></li>
+                                    <li><a href="http://instagram.com/staneskas" target="_blank">Instagram</a></li>
+                                </ul>
+                            </div>
+                            <hr class="clear" />
+                        </div>
+                        <div class="span4 centered full-width">
+                            <img class="profile-photo" src="~/Content/img/zhygarev.jpg" alt="Роман Жыгарев">
+                            <div class="profiles-wrap">
+                                <h3>Раман Жыгараў</h3>
+                                <h4 class="five">Бас-гітара, словы</h4>
+                                <ul class="no-bullets centered inline">
+                                    <li><a href="https://twitter.com/romaramsi" target="_blank">Twitter</a></li>
+                                    <li><a href="http://instagram.com/romaramsi" target="_blank">Instagram</a></li>
+                                </ul>
+                            </div>
+                            <hr class="clear" />
+                        </div>
+                        <div class="span4 centered full-width">
+                            <img class="profile-photo" src="~/Content/img/filatov.jpg" alt="Павел Филатов">
+                            <div class="profiles-wrap">
+                                <h3>Павел Філатаў</h3>
+                                <h4 class="five">Барабаны</h4>
+                                <ul class="no-bullets centered inline">
+                                    <li><a href="https://twitter.com/DrumEXT" target ="_blank">Twitter</a></li>
+                                    <li><a href="http://instagram.com/drumext" target="_blank">Instagram</a></li>
+                                </ul>
+                            </div>
+                            <hr class="clear" />
+                        </div>
+                    </div>
+        </section>
+        <div class="at-work">
+            <section class="container" id="working-image">
+                <div class="semi-grey-bg">
+                </div>
+            </section>
+        </div>
+        <section id="our-music" class="full-width">
+            <h2>Наша музыка</h2>
+            <div class="container">
+                <ul class="no-bullets inline">
+                    @foreach (var album in Model.Albums)
+                    {
+                        <li class="thumbnail">
+                            <a href="@Url.Action("Details", "Music", new {id = album.Id})">
+                                <img class="pic" src="@Url.Action("GetAlbumLogo", new { filename = album.LogoFilename })" height="267" width="353" />
+                                <h2 class="three">@album.Name</h2>
+                            </a>
+                        </li>
+                    }
+
+                </ul>
+                <hr class="clear">
+            </div>
+        </section>
+        <div class="at-work">
+            <section class="container" id="working-image">
+                <div class="semi-grey-bg">
+                </div>
+            </section>
+        </div>
+        <section id="our-concerts" class="full-width">
+            <h2>
+                <i>Ближэйшыя</i>
+                <span>Akute</span>
+                <i>выступы</i>
+            </h2>
+            <div class="container">
+                @foreach (var conc in Model.Concerts)
+                {
+                    <hr class="divider divider-process">
+                    <div class="row-fluid">
+                        <div class="span6 posRel process-images move-up">
+                            <div class="ship-wrapper">
+                                <img id="ship" src="@Url.Action("GetConcertLogo", new { filename = conc.LogoFilename })" width="200px" />
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <h3>@conc.Name</h3>
+                            <p>@conc.Date.ToShortDateString() 
+                                @if (conc.Time.HasValue) { @conc.Time.Value.ToString(@"hh\:mm")}
+                            </p>
+                            <p>@conc.City @conc.Place</p>
+                            <p>@conc.Address</p>
+                            <p>@conc.Contacts</p>
+                        </div>
+                    </div>
+                }
+                <hr class="divider divider-process" />
+            </div>
+        </section>
+        <div class="at-work">
+            <section class="container" id="working-image">
+                <div class="semi-grey-bg">
+                </div>
+            </section>
+        </div>
+        <section class="full-width" id="our-video">
+            <hr class="space" />
+            <div id="my-slideshow">
+                <h2>Відэа</h2>
+                <ul class="bjqs">
+
+                    @foreach (var video in Model.Videos)
+                    {
+                        <li>
+                            <h3>@video.Title</h3>
+                            <iframe class="video" width="560" height="315" src="@video.Link" frameborder="0" allowfullscreen></iframe>
+                            <hr />
+                        </li>
+                    }
+                </ul>
+            </div>
+        </section>
+
+    </article>
+
+    <script src="~/JS/Libs/jquery.stellar.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.stellar();
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        jQuery(document).ready(function ($) {
+            $('#my-slideshow').bjqs({
+                'height': 400,
+                prevtext: '<img src="../Content/img/arrow-prev.ico"/>',
+                nexttext: '<img src="../Content/img/arrow-next.ico"/>',
+                automatic: false,
+                'responsive': true
+            });
+        });
+    </script>

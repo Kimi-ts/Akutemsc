@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html lang="en" class="wf-keplerstd-i3-active wf-keplerstd-i4-active wf-keplerstd-i7-active wf-keplerstd-n3-active wf-keplerstd-n4-active wf-keplerstd-n7-active wf-proximanova-n3-active wf-proximanova-n4-active wf-proximanova-n6-active wf-proximanova-n7-active">
+<head>
+    <meta charset="utf-8">
+    <title>Akute
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akute Music Belarus Mogilev">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Le styles -->
+    <link href="~/Content/Libs/bootstraip.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Libs/bjqs.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="~/JS/Libs/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="~/JS/Libs/bjqs-1.3.js"></script>
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar" class="contact">
+    <nav id="main-nav" @*class="dark-header"*@>
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="home-link">
+            <a href="/">Akute</a>
+        </div>
+        <div class="nav-collapse collapse">
+            <ul class="inline-list centered nav">
+                <li>@Html.ActionLink("ДЫСКАГРАФІЯ","Discography", "Music")</li>
+                <li>@Html.ActionLink("ВІДЭА", "Gallery", "Video")</li>
+                <li>@Html.ActionLink("АФІША", "Concerts", "Afisha")</li>
+                <li>@Html.ActionLink("ГУРТ", "Details", "About")</li>
+                <li>@Html.ActionLink("СУВЯЗЬ", "Details", "Contact")</li>
+            </ul>
+        </div>
+    </nav>
+@RenderBody()
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span3">
+                </div>
+                <div class="span5">
+                    <span class="twitter"><a href="https://twitter.com/akutemusic" target="_blank" title="Akute on Twitter"><img src="~/Content/img/twitter.png" /></a></span>
+                    <span class="facebook"><a href="https://www.facebook.com/akutemusic" target="_blank" title="Akute on Facebook"><img src="~/Content/img/facebook.png" /></a></span>
+                    <span class="vk"><a href="http://vk.com/akutemusic" target="_blank" title="Akute on VK.com"><img src="~/Content/img/vk.png" /></a></span>
+                </div>
+                <div class="span4">
+                    <div class="copyright-text">
+                        <span class="sans">© 2014 Akute</span>
+                        <i>Made by KimiRaikkonen</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="~/JS/Libs/bootstrap.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 350) {
+                $("#main-nav").addClass("dark-header");
+            } else {
+                $("#main-nav").removeClass("dark-header");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AkuteDBModelStoreContainer" CdmEntityContainer="AkuteDBEntities">
+    <EntitySetMapping Name="Albums">
+      <EntityTypeMapping TypeName="AkuteDBModel.Album">
+        <MappingFragment StoreEntitySet="Albums">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="NameBe" ColumnName="NameBe" />
+          <ScalarProperty Name="NameRu" ColumnName="NameRu" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="DescriptionBe" ColumnName="DescriptionBe" />
+          <ScalarProperty Name="DescriptionEn" ColumnName="DescriptionEn" />
+          <ScalarProperty Name="DescriptionRu" ColumnName="DescriptionRu" />
+          <ScalarProperty Name="LogoFilename" ColumnName="LogoFilename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Blogs">
+      <EntityTypeMapping TypeName="AkuteDBModel.Blog">
+        <MappingFragment StoreEntitySet="Blogs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Tags" ColumnName="Tags" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Concerts">
+      <EntityTypeMapping TypeName="AkuteDBModel.Concert">
+        <MappingFragment StoreEntitySet="Concerts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="CityRu" ColumnName="CityRu" />
+          <ScalarProperty Name="CityBe" ColumnName="CityBe" />
+          <ScalarProperty Name="CityEn" ColumnName="CityEn" />
+          <ScalarProperty Name="NameRu" ColumnName="NameRu" />
+          <ScalarProperty Name="NameBe" ColumnName="NameBe" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="AddressRu" ColumnName="AddressRu" />
+          <ScalarProperty Name="AddressEn" ColumnName="AddressEn" />
+          <ScalarProperty Name="AddressBe" ColumnName="AddressBe" />
+          <ScalarProperty Name="LogoFilename" ColumnName="LogoFilename" />
+          <ScalarProperty Name="PlaceRu" ColumnName="PlaceRu" />
+          <ScalarProperty Name="PlaceBe" ColumnName="PlaceBe" />
+          <ScalarProperty Name="PlaceEn" ColumnName="PlaceEn" />
+          <ScalarProperty Name="ContactsRu" ColumnName="ContactsRu" />
+          <ScalarProperty Name="ContactsBe" ColumnName="ContactsBe" />
+          <ScalarProperty Name="ConactsEn" ColumnName="ConactsEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="AkuteDBModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TitleRu" ColumnName="TitleRu" />
+          <ScalarProperty Name="TitleBe" ColumnName="TitleBe" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="TextRu" ColumnName="TextRu" />
+          <ScalarProperty Name="TextBe" ColumnName="TextBe" />
+          <ScalarProperty Name="TextEn" ColumnName="TextEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhotoAlbums">
+      <EntityTypeMapping TypeName="AkuteDBModel.PhotoAlbum">
+        <MappingFragment StoreEntitySet="PhotoAlbums">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TitleRu" ColumnName="TitleRu" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="TitleBe" ColumnName="TitleBe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pictures">
+      <EntityTypeMapping TypeName="AkuteDBModel.Picture">
+        <MappingFragment StoreEntitySet="Pictures">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PhotoAlbumId" ColumnName="PhotoAlbumId" />
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+          <ScalarProperty Name="DescriptionRu" ColumnName="DescriptionRu" />
+          <ScalarProperty Name="DescriptionBe" ColumnName="DescriptionBe" />
+          <ScalarProperty Name="DescriptionEn" ColumnName="DescriptionEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Songs">
+      <EntityTypeMapping TypeName="AkuteDBModel.Song">
+        <MappingFragment StoreEntitySet="Songs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AlbumId" ColumnName="AlbumId" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="TitleRu" ColumnName="TitleRu" />
+          <ScalarProperty Name="TitleBe" ColumnName="TitleBe" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Filename" ColumnName="Filename" />
+          <ScalarProperty Name="Lyrics" ColumnName="Lyrics" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VideoCatogories">
+      <EntityTypeMapping TypeName="AkuteDBModel.VideoCatogory">
+        <MappingFragment StoreEntitySet="VideoCatogory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NameBe" ColumnName="NameBe" />
+          <ScalarProperty Name="NameRu" ColumnName="NameRu" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Videos">
+      <EntityTypeMapping TypeName="AkuteDBModel.Video">
+        <MappingFragment StoreEntitySet="Videos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TitleRu" ColumnName="TitleRu" />
+          <ScalarProperty Name="TitleBe" ColumnName="TitleBe" />
+          <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

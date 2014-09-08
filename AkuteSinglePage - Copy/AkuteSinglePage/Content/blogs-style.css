@@ -1,0 +1,183 @@
+﻿.pink-background
+{
+	background-color: #f9f4ed;
+}
+
+#drumext-blog
+{
+	font-size:24px;
+	margin: 0 auto;
+	padding: 2em;
+	font-family: bitter,georgia,serif;
+	color: #444;
+	line-height: 1.5;
+	max-width: 732px;
+	min-width: 240px;
+	position: relative;
+
+	color: #444;
+}
+
+.blog-wrap
+{
+	padding:2em;
+}
+
+.blog-wrap h1
+{
+	font-size: 3.75em;
+	word-wrap: break-word;
+	line-height: 1;
+	font-family: dosis,"HelveticaNeue-CondensedBold","trebuchet ms",sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: 700;
+}
+
+.blog-intro
+{
+	font-size: 1.25em;
+	margin-bottom: 0;
+}
+
+.blog-hr
+{
+	border: 0;
+	height: .75em;
+	background: #c66;
+	display: block;
+	clear: both;
+	margin: 0 2em;
+	padding: 0;
+	border-radius: .25em;
+}
+
+.blog-list-title
+{
+	font-weight:400;
+	text-align:left;
+	font-size: 1.25em;
+	padding: 0 1.5em;
+	margin-top: 1.5em;
+	margin-left:1em;
+	font-family: dosis,"HelveticaNeue-CondensedBold","trebuchet ms",sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-bottom:1.5em;
+}
+
+.blog-post-list
+{
+	border-top: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 3em;
+	margin-bottom: 0;
+}
+
+ul.blog-post-list
+{
+	list-style:none;
+}
+
+.blog-post-block
+{
+	margin: 0;
+	padding: 1em 2em;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.blog-post-title
+{
+	margin:0;
+}
+
+.blog-post-data
+{
+	margin: 0;
+	padding: .25em 0;
+	color: #aaa;
+	color: rgba(0,0,0,0.35);
+}
+
+.blog-post-title
+{
+	font-weight:700;
+}
+
+.blog-list-title i 
+{
+	margin-right: .5em;
+	margin-top:.3em;
+}
+
+.icon-pencil:before
+{
+	content:"\2750"
+}
+
+.blog-mini-profile
+{
+	padding-bottom: 0;
+	padding-top: 3em;
+}
+
+.blog-photo
+{
+	overflow: hidden;
+	position: relative;
+	border-radius: .25em;
+	height: 100%;
+	max-width: 702px;
+	display: block;
+	background: #444;
+	border: .25em solid #444;
+}
+
+.blog-avatar
+{
+	width: 3em;
+	height:3em;
+	float: left;
+	margin: 0 1em 0.5em 0;
+}
+
+h4.blog-title
+{
+	font-family: dosis,"HelveticaNeue-CondensedBold","trebuchet ms",sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: 700;
+	font-size: 1.5em;
+	margin:0;
+}
+
+h6.blog-subtitle
+{
+	font-family: dosis,"HelveticaNeue-CondensedBold","trebuchet ms",sans-serif;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-size: 1em;
+	font-weight: 400;
+	margin-top: 0px;
+	margin-bottom: 0.6em;
+	line-height: inherit;
+}
+
+.blog-social
+{
+	font-size:0.75em;
+	padding:0;
+	margin:1em;
+}
+
+.blog-ul-social
+{
+	list-style:none;
+}
+
+.blog-ul-social li
+{
+	margin-right:1em;
+	display:inline-block;
+}

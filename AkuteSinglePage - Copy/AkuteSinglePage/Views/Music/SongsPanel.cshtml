@@ -1,0 +1,129 @@
+﻿@model AkuteSinglePage.Models.LocalizedAlbum
+
+            <div class ="row-fluid">
+                <div class="span4 posRel album-desc-container">
+                     <p class="album-year">@Model.Year</p>
+                     <p class="album-title">@Model.Name</p>
+                     <p class="album-description-text">@Model.Description Headline Example
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="span4">
+                        <audio id="audio" class="audio" preload controls="">
+                            <source id="audio-ogg" src="" type="audio/ogg" />
+                            <source id="audio-mp3" src="" type="audio/mpeg"/>
+                            Sorry, your browser does not support HTML5 audio.
+                        </audio>
+                        <ol id="playlist">
+                        @foreach (var song in Model.Songs)
+                        {
+                            <li class="song">
+                                <a data-src-mp3 ="@Url.Action("myaudio", new { albumId = song.AlbumId, songName = song.Filename, type=AkuteSinglePage.Utils.MusicType.MP3 })" 
+                                    data-src-ogg="@Url.Action("myaudio", new { albumId = song.AlbumId, songName = song.Filename, type=AkuteSinglePage.Utils.MusicType.Ogg })"
+                                    href="">
+                                    @song.Title 
+                                </a>
+                                <span class="icon-lyrics">
+                                    <img class="lyrics-icon" src="~/Content/img/1406735109_FEZ-03.png" data-url="@Url.Action("LyricsPanel", "Music", new {songId = song.Id})"/>
+                                </span>
+                            </li>
+                        }
+                        </ol>
+                </div>
+                <div class="span4">
+                    <div id="lyrics-panel">
+
+                    </div>
+
+                  
+                </div>
+                </div>
+
+
+<script type="text/javascript">
+    $(function () {
+
+        var audio;
+        var playlist;
+        var tracks;
+        var current;
+
+        init();
+        function init() {
+            current = 0;
+            audio = $('audio');
+            playlist = $('#playlist');
+            tracks = playlist.find('li a');
+            len = tracks.length - 1;
+            audio[0].volume = .30;
+
+            //kimi: load first song
+            var first = tracks[0];
+            run($(first), audio[0]);
+
+
+            playlist.find('a').click(function (e) {
+                e.preventDefault();
+                link = $(this);
+                current = link.parent().index();
+                run(link, audio[0]);
+            });
+
+            audio[0].addEventListener('ended', function (e) {
+                current++;
+                if (current == len) {
+                    current = 0;
+                    link = playlist.find('a')[0];
+                } else {
+                    link = playlist.find('a')[current];
+                }
+                run($(link), audio[0]);
+            });
+        }
+
+        function run(link, player) {
+            var mp3Url = link.attr("data-src-mp3");
+            var oggUrl = link.attr("data-src-ogg");
+            var mp3Source = $(player).find("#audio-mp3").first();
+            var oggSource = $(player).find("#audio-ogg").first();
+            mp3Source.attr("src", mp3Url);
+            oggSource.attr("src", oggUrl);
+            
+            par = link.parent();
+            par.addClass('active').siblings().removeClass('active');
+            audio[0].load();
+            audio[0].play();
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        $(".lyrics-icon").click(function (e) {
+            var link = $(this);
+            var url = link.attr("data-url");
+
+            var $lyricsPanel = $("#lyrics-panel");
+
+            if (link.hasClass("lyrics-active")) {
+                $lyricsPanel.html("");
+
+                //remove activity from all icons
+                $(".lyrics-active").removeClass("lyrics-active");
+                return false;
+            }
+            else {
+                jQuery.ajax({
+                    url: url,
+                    success: function (result) {
+                        $lyricsPanel.html(result);
+
+                        //kimi: remove lyrics-active from all icons, if exists
+                        $(".lyrics-active").removeClass("lyrics-active");
+                        link.addClass("lyrics-active");
+                    },
+                    async: false
+                });
+            }
+        });
+    });
+</script>

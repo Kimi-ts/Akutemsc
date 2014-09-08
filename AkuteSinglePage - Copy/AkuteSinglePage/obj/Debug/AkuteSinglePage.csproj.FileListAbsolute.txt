@@ -1,0 +1,110 @@
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\AkuteSinglePage.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\AkuteSinglePage.pdb
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\Antlr3.Runtime.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.AspNet.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.Core.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.OAuth.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.OpenId.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\EntityFramework.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\Microsoft.Web.Infrastructure.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\Newtonsoft.Json.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Net.Http.Formatting.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Helpers.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Http.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Http.WebHost.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Mvc.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Optimization.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Razor.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.WebPages.Deployment.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.WebPages.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.WebPages.Razor.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\WebGrease.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\WebMatrix.Data.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\WebMatrix.WebData.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\EntityFramework.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\Newtonsoft.Json.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Net.Http.Formatting.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Helpers.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Http.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Http.WebHost.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Mvc.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.Razor.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.WebPages.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.WebPages.Deployment.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\System.Web.WebPages.Razor.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\WebMatrix.Data.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\WebMatrix.WebData.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.AspNet.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.Core.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.OAuth.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.OpenId.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\obj\Debug\AkuteSinglePage.csprojResolveAssemblyReference.cache
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\obj\Debug\AkuteSinglePage.dll
+c:\users\tatyana.shvets.icx\documents\visual studio 2012\Projects\AkuteSinglePage\AkuteSinglePage\obj\Debug\AkuteSinglePage.pdb
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\AkuteSinglePage.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\AkuteSinglePage.pdb
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Antlr3.Runtime.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.Core.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\EntityFramework.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Newtonsoft.Json.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Net.Http.Formatting.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Helpers.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Http.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Http.WebHost.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Mvc.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Optimization.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Razor.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.WebPages.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.WebPages.Razor.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\WebGrease.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\WebMatrix.Data.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\WebMatrix.WebData.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\EntityFramework.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Newtonsoft.Json.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Net.Http.Formatting.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Helpers.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Http.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Http.WebHost.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Mvc.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.Razor.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.WebPages.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\System.Web.WebPages.Razor.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\WebMatrix.Data.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\WebMatrix.WebData.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.Core.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\obj\Debug\AkuteSinglePage.csprojResolveAssemblyReference.cache
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\obj\Debug\AkuteSinglePage.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\obj\Debug\AkuteSinglePage.pdb
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.Unity.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.Unity.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.Unity.Mvc.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\WebActivatorEx.dll
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\tatyana.shvets.ICX\Documents\Visual Studio 2012\Projects\AkuteSinglePage - Copy\AkuteSinglePage\bin\Microsoft.Practices.Unity.Mvc.xml
