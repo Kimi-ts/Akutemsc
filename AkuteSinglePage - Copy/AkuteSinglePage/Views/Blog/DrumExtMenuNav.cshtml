@@ -1,0 +1,69 @@
+﻿@model AkuteSinglePage.Models.LocalizedUser
+
+        <nav class="blog-nav">
+
+            <ul class="nav-menu no-bullet">
+            
+                <li><a id="blog-notes-button" href="" data-src="@Url.Action("GetNotesList", "Blog", new { userId = Model.Id })">
+                    <i class="custom-icon-pencil">Записи (@Model.Blogs.Count())</i></a>
+                    <div id="notes-panel"></div>
+                </li>
+                <li><a id="blog-photoAlbums-button" href="" data-src="@Url.Action("GetPhotoAlbumsList", "Blog", new { userId = Model.Id })">
+                    <i class="custom-icon-photo">Мои Фото</i></a>
+                    <div id="photoAlbums-panel"></div>
+                </li>
+                <li><a href="@Url.Action("DrumExt", "Blog")"><i class="">Профиль</i></a></li>
+            
+            </ul>
+            
+        </nav>
+
+
+        <script type="text/javascript">
+            $(function () {
+
+                $("#blog-notes-button").click(function () {
+
+                    var $notesPanel = $("#notes-panel");
+
+                    if ($notesPanel.text() == "") {
+                        var link = $(this);
+                        var url = link.attr("data-src");
+
+                        jQuery.ajax({
+                            url: url,
+                            success: function (result) {
+                                $notesPanel.html(result);
+                            },
+                            async: false
+                        });
+                    }
+                    else {
+                        $notesPanel.html("");
+                    }
+
+                    return false;
+                });
+
+                $("#blog-photoAlbums-button").click(function () {
+                    var $photoAlbumsPanel = $("#photoAlbums-panel");
+                    if ($photoAlbumsPanel.text() == "") {
+                        var link = $(this);
+                        var url = link.attr("data-src");
+
+                        jQuery.ajax({
+                            url: url,
+                            success: function (result) {
+                                $photoAlbumsPanel.html(result);
+                            },
+                            async:false
+                        });
+                    }
+                    else {
+                        $photoAlbumsPanel.html("");
+                    }
+
+                    return false;
+                });
+            });
+        </script>

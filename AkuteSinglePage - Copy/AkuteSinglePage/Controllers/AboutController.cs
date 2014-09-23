@@ -22,7 +22,10 @@ namespace AkuteSinglePage.Controllers
         public ActionResult Details()
         {
             var lang = Thread.CurrentThread.CurrentCulture;
-            var picturesfromdb = context.Pictures.ToList();
+
+            //General Blog Gallery Photo album is album without User in DB
+            var picturesfromdb = context.PhotoAlbums.Where(c => c.User == null).First().Pictures.ToList();
+
             var model = new AboutModel();
             model.Pictures = new List<LocalizedPicture>();
             foreach (var pic in picturesfromdb)

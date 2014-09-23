@@ -24,7 +24,9 @@ namespace AkuteSinglePage.Models
         public string TitleRu { get; set; }
         public string TitleEn { get; set; }
         public string TitleBe { get; set; }
+        public Nullable<int> UserId { get; set; }
     
+        public virtual User User { get; set; }
         public virtual ICollection<Picture> Pictures { get; set; }
     }
 }

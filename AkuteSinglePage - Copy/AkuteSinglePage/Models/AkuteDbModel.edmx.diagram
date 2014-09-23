@@ -4,19 +4,20 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="f2a279b46af548a1aaf622f09f0a887b" Name="Diagram1">
-        <EntityTypeShape EntityType="AkuteDBModel.Album" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="AkuteDBModel.Blog" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="AkuteDBModel.Concert" Width="1.5" PointX="2.75" PointY="8.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AkuteDBModel.News" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="AkuteDBModel.PhotoAlbum" Width="1.5" PointX="5.75" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="AkuteDBModel.Picture" Width="1.5" PointX="8" PointY="6" IsExpanded="true" />
-        <EntityTypeShape EntityType="AkuteDBModel.Song" Width="1.5" PointX="8" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="AkuteDBModel.User" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="AkuteDBModel.VideoCatogory" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="AkuteDBModel.Video" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+      <Diagram DiagramId="5c1ca670203c4a358c6d5e60922a9dcc" Name="Diagram1">
+        <EntityTypeShape EntityType="AkuteDBModel.Album" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="AkuteDBModel.Blog" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AkuteDBModel.Concert" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AkuteDBModel.News" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AkuteDBModel.PhotoAlbum" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AkuteDBModel.Picture" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AkuteDBModel.Song" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AkuteDBModel.User" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AkuteDBModel.VideoCatogory" Width="1.5" PointX="7.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AkuteDBModel.Video" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="AkuteDBModel.FK_Songs_0" ManuallyRouted="false" />
         <AssociationConnector Association="AkuteDBModel.FK_Blogs_0" ManuallyRouted="false" />
+        <AssociationConnector Association="AkuteDBModel.FK_PhotoAlbums_0" ManuallyRouted="false" />
         <AssociationConnector Association="AkuteDBModel.FK_Pictures_0" ManuallyRouted="false" />
         <AssociationConnector Association="AkuteDBModel.FK_Videos_0" ManuallyRouted="false" />
       </Diagram>

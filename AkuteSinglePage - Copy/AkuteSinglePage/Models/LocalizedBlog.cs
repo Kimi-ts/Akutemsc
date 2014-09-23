@@ -37,19 +37,7 @@ namespace AkuteSinglePage.Models
         {
             get
             {
-                if (lang.Name == "be")
-                {
-                    return blog.Title;
-                }
-                if (lang.Name == "en")
-                {
-                    return blog.Title;
-                }
-                if (lang.Name == "ru")
-                {
-                    return blog.Title;
-                }
-                return string.Empty;
+                return blog.Title;
             }
         }
 
@@ -57,19 +45,7 @@ namespace AkuteSinglePage.Models
         {
             get
             {
-                if (lang.Name == "be")
-                {
-                    return blog.Text;
-                }
-                if (lang.Name == "en")
-                {
-                    return blog.Text;
-                }
-                if (lang.Name == "ru")
-                {
-                    return blog.Text;
-                }
-                return string.Empty;
+                return blog.Text;
             }
         }
 
@@ -77,19 +53,7 @@ namespace AkuteSinglePage.Models
         {
             get
             {
-                if (lang.Name == "be")
-                {
-                    return blog.Tags;
-                }
-                if (lang.Name == "en")
-                {
-                    return blog.Tags;
-                }
-                if (lang.Name == "ru")
-                {
-                    return blog.Tags;
-                }
-                return string.Empty;
+                return blog.Tags;
             }
         }
 

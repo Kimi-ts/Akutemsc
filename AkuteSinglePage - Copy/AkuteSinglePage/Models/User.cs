@@ -17,6 +17,7 @@ namespace AkuteSinglePage.Models
         public User()
         {
             this.Blogs = new HashSet<Blog>();
+            this.PhotoAlbums = new HashSet<PhotoAlbum>();
         }
     
         public int Id { get; set; }
@@ -33,5 +34,6 @@ namespace AkuteSinglePage.Models
         public string LogoFilename { get; set; }
     
         public virtual ICollection<Blog> Blogs { get; set; }
+        public virtual ICollection<PhotoAlbum> PhotoAlbums { get; set; }
     }
 }

@@ -198,29 +198,29 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AboutModel.cs" />
-    <Compile Include="Models\AkuteDbModel.Context.cs">
+    <Compile Include="Models\AkuteDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AkuteDbModel.Context.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\AkuteDbModel.cs">
+    <Compile Include="Models\AkuteDBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\AkuteDbModel.Designer.cs">
+    <Compile Include="Models\AkuteDBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AkuteDbModel.edmx</DependentUpon>
+      <DependentUpon>AkuteDBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Album.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Blog.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Concert.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\HomePageModel.cs" />
@@ -235,33 +235,35 @@
     <Compile Include="Models\LocalizedVideo.cs" />
     <Compile Include="Models\LocalizedVideoCategory.cs" />
     <Compile Include="Models\News.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\PhotoAlbum.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Picture.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Song.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Video.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\VideoCatogory.cs">
-      <DependentUpon>AkuteDbModel.tt</DependentUpon>
+      <DependentUpon>AkuteDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\AllowAnonymous.cs" />
+    <Compile Include="Utils\BlogSectionType.cs" />
     <Compile Include="Utils\CultureHelper.cs" />
     <Compile Include="Utils\MusicType.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\blogs-style.css" />
+    <Content Include="Content\fonts\icomoon.svg" />
     <Content Include="Content\img\1406735109_FEZ-03.png" />
     <Content Include="Content\img\31.jpg" />
     <Content Include="Content\img\5.jpg" />
@@ -370,6 +372,13 @@
     <Content Include="Data\Pictures\4\23.jpg" />
     <Content Include="Data\Pictures\4\24.jpg" />
     <Content Include="Data\Pictures\4\25.jpg" />
+    <Content Include="Data\Pictures\5\1.jpg" />
+    <Content Include="Data\Pictures\5\2.jpg" />
+    <Content Include="Data\Pictures\5\3.jpg" />
+    <Content Include="Data\Pictures\5\4.jpg" />
+    <Content Include="Data\Pictures\5\6.jpg" />
+    <Content Include="Data\Pictures\5\F_fO_5X1sME.jpg" />
+    <Content Include="Data\Pictures\6\graffiti.jpg" />
     <Content Include="Data\Pictures\Album Logos\akute-dzievackiikosmas_0.jpg" />
     <Content Include="Data\Pictures\Album Logos\akutecover-1.jpg" />
     <Content Include="Data\Pictures\Album Logos\neisnujeakutecover.jpg" />
@@ -423,22 +432,25 @@
     <Content Include="Views\Account\LogOn.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Models\AkuteDbModel.edmx">
+    <Content Include="Content\fonts\icomoon.eot" />
+    <Content Include="Content\fonts\icomoon.ttf" />
+    <Content Include="Content\fonts\icomoon.woff" />
+    <EntityDeploy Include="Models\AkuteDBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AkuteDbModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>AkuteDBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\AkuteDbModel.Context.tt">
+    <Content Include="Models\AkuteDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AkuteDbModel.edmx</DependentUpon>
-      <LastGenOutput>AkuteDbModel.Context.cs</LastGenOutput>
+      <DependentUpon>AkuteDBModel.edmx</DependentUpon>
+      <LastGenOutput>AkuteDBModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\AkuteDbModel.edmx.diagram">
-      <DependentUpon>AkuteDbModel.edmx</DependentUpon>
+    <Content Include="Models\AkuteDBModel.edmx.diagram">
+      <DependentUpon>AkuteDBModel.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\AkuteDbModel.tt">
+    <Content Include="Models\AkuteDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>AkuteDbModel.edmx</DependentUpon>
-      <LastGenOutput>AkuteDbModel.cs</LastGenOutput>
+      <DependentUpon>AkuteDBModel.edmx</DependentUpon>
+      <LastGenOutput>AkuteDBModel.cs</LastGenOutput>
     </Content>
     <None Include="Properties\PublishProfiles\akutemusic2 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\akutemusic2 - Web Deploy.pubxml" />
@@ -452,6 +464,12 @@
     <Content Include="Views\About\Details.cshtml" />
     <Content Include="Views\Blog\Staneskas.cshtml" />
     <Content Include="Views\Blog\DrumExt.cshtml" />
+    <Content Include="Views\Blog\DrumExtNotesList.cshtml" />
+    <Content Include="Views\Blog\DrumExtPhotoAlbumsList.cshtml" />
+    <Content Include="Views\Blog\DrumExtNote.cshtml" />
+    <Content Include="Views\Blog\DrumExtMenuNav.cshtml" />
+    <Content Include="Views\Blog\DrumExtMiniProfile.cshtml" />
+    <Content Include="Views\Blog\DrumExtPhotoAlbum.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

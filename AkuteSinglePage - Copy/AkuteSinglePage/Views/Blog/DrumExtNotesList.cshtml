@@ -1,0 +1,18 @@
+﻿@using AkuteSinglePage.Utils
+@model AkuteSinglePage.Models.LocalizedUser
+
+        <div id="articles">
+
+
+            <ul>
+                @foreach (var blog in Model.Blogs)
+                {
+                    <li class="blog-post-block">
+                        <h4 class="blog-post-title">
+                            <a href="@Url.Action("DrumExtBlog", "Blog", new {section = BlogSectionType.Notes, id = blog.Id})" >@blog.Title</a>
+                        </h4>
+                        <p class="blog-post-data">@blog.Date</p>
+                    </li>
+                }
+            </ul>
+        </div>

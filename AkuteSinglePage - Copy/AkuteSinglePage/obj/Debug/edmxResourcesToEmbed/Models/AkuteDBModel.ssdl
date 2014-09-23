@@ -15,6 +15,10 @@
       <End Role="Users" EntitySet="Users" />
       <End Role="Blogs" EntitySet="Blogs" />
     </AssociationSet>
+    <AssociationSet Name="FK_PhotoAlbums_0" Association="AkuteDBModel.Store.FK_PhotoAlbums_0">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="PhotoAlbums" EntitySet="PhotoAlbums" />
+    </AssociationSet>
     <AssociationSet Name="FK_Pictures_0" Association="AkuteDBModel.Store.FK_Pictures_0">
       <End Role="PhotoAlbums" EntitySet="PhotoAlbums" />
       <End Role="Pictures" EntitySet="Pictures" />
@@ -100,6 +104,7 @@
     <Property Name="TitleRu" Type="ntext" Nullable="false" />
     <Property Name="TitleEn" Type="ntext" Nullable="false" />
     <Property Name="TitleBe" Type="ntext" Nullable="false" />
+    <Property Name="UserId" Type="int" />
   </EntityType>
   <EntityType Name="Pictures">
     <Key>
@@ -172,6 +177,18 @@
       </Principal>
       <Dependent Role="Blogs">
         <PropertyRef Name="AuthorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhotoAlbums_0">
+    <End Role="Users" Type="AkuteDBModel.Store.Users" Multiplicity="0..1" />
+    <End Role="PhotoAlbums" Type="AkuteDBModel.Store.PhotoAlbums" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PhotoAlbums">
+        <PropertyRef Name="UserId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

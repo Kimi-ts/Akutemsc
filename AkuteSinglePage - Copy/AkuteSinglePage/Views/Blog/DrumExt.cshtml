@@ -5,81 +5,17 @@
     Layout = "~/Views/Shared.cshtml";
 }
 <div class="pink-background">
-    <section id="drumext-blog">
+    <section id="drumext-blog" class="blog-block">
                     <div id="about">
-                        <div class="blog-mini-profile blog-wrap">
-                            <div>
-                                <img class="blog-photo blog-avatar" src="@Url.Action("GetProfileLogo", new {filename = Model.LogoFilename})" alt="@Model.Name" />
-                            </div>
-                            <h4 class="blog-title">
-                                @Model.Name @Model.Surname
-                            </h4>
-                            <h6 class="blog-subtitle">
-                                Барабанщик
-                            </h6>
-                            <div>
-                                <p>
-                                    Привет! Я Павел Филатов, барабанщик музыкального коллектива из Могилёва под названием Akute, и это мой замечательный блог. Присоединяйтесь!
-                                </p>
-                            </div>
-                            <div class="blog-social">
-                                <ul class="blog-ul-social">
-                                    <li>Twitter</li>
-                                    <li>Instagram</li>
-                                    <li>VK</li>
-                                    <li>Email</li>
-                                </ul>
-                            </div>
-                        </div>
+                        @Html.Partial("~/Views/Blog/DrumExtMiniProfile.cshtml", Model)
                     </div>
-                <div id="articles">
-@*            <header class="blog-wrap">
-                <h1>@Model.Name</h1>
-                <p class="blog-intro">Привет! Я Павел Филатов, барабанщик музыкального коллектива из Могилёва под названием Akute, и это мой замечательный блог. Присоединяйтесь!</p>
-            </header>*@
-            <hr class="blog-hr" />
-            <h2 class="blog-list-title">   
-                <i class="icon-pencil"></i>     
-                @Model.Blogs.Count() записей
-            </h2>
-            <ul class="blog-post-list">
-                @foreach (var blog in Model.Blogs)
-                {
-                    <li class="blog-post-block">
-                        <h3 class="blog-post-title">
-                            @blog.Title
-                        </h3>
-                        <p class="blog-post-data">@blog.Date</p>
-                    </li>
-                }
-            </ul>
-            <hr class="blog-hr" />
-        </div>
-@*        <div id="about">
-            <div class="blog-mini-profile blog-wrap">
-                <div>
-                    <img class="blog-photo blog-avatar" src="@Url.Action("GetProfileLogo", new {filename = Model.LogoFilename})" alt="@Model.Name" />
-                </div>
-                <h4 class="blog-title">
-                    @Model.Name @Model.Surname
-                </h4>
-                <h6 class="blog-subtitle">
-                    Барабанщик
-                </h6>
-                <div>
-                    <p>
-                        Привет! Я Павел Филатов, барабанщик музыкального коллектива из Могилёва под названием Akute, и это мой замечательный блог. Присоединяйтесь!
-                    </p>
-                </div>
-            </div>
-        </div>*@
-        <div id="social">
 
-        </div>
-        <div id="menu">
-
-        </div>
+                   <div>
+                       @Html.Partial("~/Views/Blog/DrumExtMenuNav.cshtml", Model)
+                   </div>
     </section>
 </div>
+
+
 
 <link type="text/css" rel="stylesheet" href="~/Content/blogs-style.css" />

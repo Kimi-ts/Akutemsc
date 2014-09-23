@@ -33,6 +33,15 @@ namespace AkuteSinglePage.Models
             }
         }
 
+
+        public LocalizedUser User
+        {
+            get
+            {
+                return new LocalizedUser(photoAlbum.User, lang);
+            }
+        }
+
         public string Title
         {
             get

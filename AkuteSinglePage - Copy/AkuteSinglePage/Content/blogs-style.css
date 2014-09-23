@@ -6,8 +6,8 @@
 #drumext-blog
 {
 	font-size:24px;
+	/*padding:2em 0 0 15em;*/
 	margin: 0 auto;
-	padding: 2em;
 	font-family: bitter,georgia,serif;
 	color: #444;
 	line-height: 1.5;
@@ -32,6 +32,7 @@
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	font-weight: 700;
+	text-align:left;
 }
 
 .blog-intro
@@ -64,6 +65,8 @@
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-bottom:1.5em;
+
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .blog-post-list
@@ -111,9 +114,11 @@ ul.blog-post-list
 	margin-top:.3em;
 }
 
-.icon-pencil:before
+.custom-icon-pencil:before
 {
-	content:"\2750"
+	content:"\2750";
+	/*content:"\270D";*/
+	margin-right:0.3em;
 }
 
 .blog-mini-profile
@@ -150,6 +155,7 @@ h4.blog-title
 	font-weight: 700;
 	font-size: 1.5em;
 	margin:0;
+	padding-left:2.5em;
 }
 
 h6.blog-subtitle
@@ -180,4 +186,181 @@ h6.blog-subtitle
 {
 	margin-right:1em;
 	display:inline-block;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?409o9c');
+	src:url('fonts/icomoon.eot?#iefix409o9c') format('embedded-opentype'),
+		url('fonts/icomoon.woff?409o9c') format('woff'),
+		url('fonts/icomoon.ttf?409o9c') format('truetype'),
+		url('fonts/icomoon.svg?409o9c#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.blog-social-twitter:before
+{
+	content:"\e603";
+	font-family: 'icomoon';
+	margin-right:0.1em;
+}
+
+.blog-social-twitter a
+{
+	color:black;
+}
+
+.blog-social-instagram:before
+{
+	content: "\e602";
+	font-family:'icomoon';
+	margin-right:0.3em;
+}
+
+.blog-social-instagram a
+{
+	color:black;
+}
+
+.icomoon
+{
+	font-family:'icomoon';
+}
+
+.blog-social-email:before
+{
+	content:'\e601';
+	font-family:'icomoon';
+	margin-right:0.3em;
+}
+
+.custom-icon-photo:before
+{
+	content:"\e600";
+	font-family:'icomoon';
+	margin-right:0.3em;
+}
+
+.blog-social-email a
+{
+	color:black;
+}
+
+.post-block
+{
+	border-bottom: 1px solid rgba(0,1,0,0.1);
+}
+
+/*kimi after removing*/
+.blog-nav
+{
+	width: 100%;
+	padding: 3em 0 0;
+	border: 0;
+	top: -50%;
+	-webkit-transition: top 0 ease-in-out;
+	-moz-transition: top 0 ease-in-out;
+	-o-transition: top 0 ease-in-out;
+	transition: top 0 ease-in-out;
+}
+
+.nav-menu
+{
+	margin: 0;
+border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+	.nav-menu li
+	{
+		padding:0;
+	}
+
+		.nav-menu li
+		{
+			font-weight: 700;
+text-transform: uppercase;
+letter-spacing: .1em;
+padding: .5em 1.5em;
+font-size: 1.25em;
+display: block;
+border-bottom: 1px solid rgba(0,0,0,0.1);
+		}
+
+.no-bullet
+{
+	list-style:none;
+}
+
+/*kimi - for notes page*/
+
+#sitemeta
+{
+	top: 6em;
+	z-index: 1;
+
+}
+
+	#drumext-blog aside
+	{
+			position: fixed;
+width: 25em;
+margin-left: -25em;
+font-size:16px;
+	}
+
+
+h1, h2, h3, h4, h5, h6
+{
+	font-weight: 700;
+line-height: 1.25;
+margin: 0 0 1rem;
+}
+
+.blog-block
+{
+	padding:2em;
+}
+
+.blog-single-note-block
+{
+	padding: 2em 0 0 15em;
+}
+
+.blog-menu-nav-wrapper
+{
+	padding:2em;
+}
+
+.blog-photo-wrapper
+{
+
+}
+
+.blog-photo
+{
+	margin: 0 0 2em;
+	border-width: .5em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.photo
+{
+	overflow: hidden;
+position: relative;
+border-radius: .25em;
+height: 100%;
+max-width: 702px;
+display: block;
+background: #444;
+border: .25em solid #444;
+}
+
+.blog-photo img
+{
+	width:100%;
+	height:100%;
 }

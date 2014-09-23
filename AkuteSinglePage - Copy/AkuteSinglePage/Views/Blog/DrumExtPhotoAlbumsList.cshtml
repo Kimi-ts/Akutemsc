@@ -1,0 +1,17 @@
+﻿@using AkuteSinglePage.Utils
+@model AkuteSinglePage.Models.LocalizedUser
+
+        <div id="articles">
+
+
+            <ul>
+                @foreach (var pAlbum in Model.PhotoAlbums)
+                {
+                    <li class="blog-post-block">
+                        <h4 class="blog-post-title">
+                            <a href="@Url.Action("DrumExtBlog", "Blog", new {section = BlogSectionType.Photos, id = pAlbum.Id})" >@pAlbum.Title (@pAlbum.Pictures.Count())</a>
+                        </h4>
+                    </li>
+                }
+            </ul>
+        </div>

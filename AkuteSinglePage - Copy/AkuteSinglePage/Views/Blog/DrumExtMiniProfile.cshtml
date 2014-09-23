@@ -1,0 +1,24 @@
+﻿@model AkuteSinglePage.Models.LocalizedUser
+
+            <div class="blog-mini-profile blog-wrap">
+                <div>
+                    <img class="blog-photo blog-avatar" src="@Url.Action("GetProfileLogo", new { filename = Model.LogoFilename })" alt="@Model.Name" />
+                </div>
+                <h4 class="blog-title">
+                    @Model.Name @Model.Surname
+                </h4>
+                <h6 class="blog-subtitle">Барабанщик
+                </h6>
+                <div>
+                    <p>
+                        Привет! Я Павел Филатов, барабанщик музыкального коллектива из Могилёва под названием Akute, и это мой замечательный блог. Присоединяйтесь!
+                    </p>
+                </div>
+                <div class="blog-social">
+                    <ul class="blog-ul-social">
+                        <li><i class="blog-social-twitter"><a href="@string.Format(@"https://twitter.com/{0}", Model.Twitter)" target="_blank">&#64;drumExt</a></i></li>
+                        <li><i class="blog-social-instagram"><a href="@Model.Instagram" target="_blank">Instagram</a></i></li>
+                        <li><i class="blog-social-email"><a href="@Url.Action("Details", "Contact")">Email</a></i></li>
+                    </ul>
+                </div>
+            </div>

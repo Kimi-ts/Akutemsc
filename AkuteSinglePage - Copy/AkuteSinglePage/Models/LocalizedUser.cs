@@ -119,5 +119,18 @@ namespace AkuteSinglePage.Models
             }
         }
 
+        public IEnumerable<LocalizedPhotoAlbum> PhotoAlbums
+        {
+            get
+            {
+                var photoAlbums = new List<LocalizedPhotoAlbum>();
+                foreach (var item in user.PhotoAlbums)
+                {
+                    photoAlbums.Add(new LocalizedPhotoAlbum(item, lang));
+                }
+                return photoAlbums;
+            }
+        }
+
     }
 }

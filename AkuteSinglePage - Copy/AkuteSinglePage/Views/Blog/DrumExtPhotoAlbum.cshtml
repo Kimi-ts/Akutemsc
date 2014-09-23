@@ -1,0 +1,48 @@
+﻿@model AkuteSinglePage.Models.LocalizedPhotoAlbum
+
+@{
+    ViewBag.Title = "DrumExtPhotoAlbum";
+    Layout = "~/Views/Shared.cshtml";
+}
+
+<div class="pink-background">
+    <div id="drumext-blog" class="blog-single-note-block">
+        <div class="blog-sidebar">
+            <section id="page">
+                <div class="blog-wrap">
+                    <h1>
+                        @Model.Title
+                    </h1>
+                    <p class="blog-post-data">
+                        @Model.Date
+                    </p>
+                </div>
+                <hr class="blog-hr" />
+                <div class="blog-post-content blog-wrap">
+                    
+                    <div class="blog-photo-wrapper">
+                        @foreach (var photo in Model.Pictures)
+                        {
+                            <figure class="blog-photo photo">
+                                <img src="@Url.Action("GetAlbumPicture", new{ photoAlbumId = Model.Id, filename = photo.Filename})" />
+                            </figure>
+                        }
+                    </div>
+                </div>
+                <hr class="blog-hr" />
+            </section>
+            <section>
+                <div  class="blog-menu-nav-wrapper">
+                    @Html.Partial("~/Views/Blog/DrumExtMenuNav.cshtml", Model.User)
+                </div>
+            </section>
+        </div>
+
+        <aside id="sitemeta">
+            @Html.Partial("~/Views/Blog/DrumExtMiniProfile.cshtml", Model.User)
+        </aside>
+    </div>
+
+</div>
+
+<link type="text/css" rel="stylesheet" href="~/Content/blogs-style.css" />

@@ -76,6 +76,7 @@
           <ScalarProperty Name="TitleRu" ColumnName="TitleRu" />
           <ScalarProperty Name="TitleEn" ColumnName="TitleEn" />
           <ScalarProperty Name="TitleBe" ColumnName="TitleBe" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
