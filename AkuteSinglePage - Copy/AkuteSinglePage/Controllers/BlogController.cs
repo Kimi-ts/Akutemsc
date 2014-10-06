@@ -25,6 +25,14 @@ namespace AkuteSinglePage.Controllers
             return View();
         }
 
+        public ActionResult Romaramsi()
+        {
+            var lang = Thread.CurrentThread.CurrentCulture;
+            var userFromDb = context.Users.Where(c => c.NameRu == "Роман").First();
+            var currentUser = new LocalizedUser(userFromDb, lang);
+            return View(currentUser);
+        }
+
         public ActionResult DrumExt()
         {
             var lang = Thread.CurrentThread.CurrentCulture;
